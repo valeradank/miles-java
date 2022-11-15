@@ -2,19 +2,20 @@ public class Main {
     public static void main(String[] args) {
 
 
-        int x = 0; // деньги на счету клиента
+        int moneyInTheAccount = 0; // деньги на счету клиента
 
-        int y = 2000; // сумма пополнения
+        int replenishmentAmount = 2000; // сумма пополнения
 
-        System.out.println(x + y);
 
-        int c = 10; // сумма бонусный рублей за каждые 100 рублей
+        int priceBonus = 10; // сумма бонусный рублей за каждые 100 рублей
 
-        int v = 1100; // сумма необходимая для получения бонуса
-        if (y > v) {
-            System.out.println(y / c + y);
+        int minimumBonusAmount = 1100; // сумма необходимая для получения бонуса
+        if (replenishmentAmount > minimumBonusAmount) {
+            System.out.println(replenishmentAmount / priceBonus + replenishmentAmount);
+        } else {
+            System.out.println("недостаточно средств для бонуса");
 
         }
-}
     }
+}
 
